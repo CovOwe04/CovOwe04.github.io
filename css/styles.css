@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 244, 98, 58;
+  --bs-primary-rgb: 200, 160, 0;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -608,13 +608,31 @@ progress {
   height: auto;
 }
 
-.img-thumbnail {
+.img-horizontal {
   padding: 0.25rem;
   background-color: #fff;
   border: 1px solid var(--bs-border-color);
   border-radius: 0.375rem;
   max-width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.img-horizontal-conestoga {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.375rem;
+  max-width: 100%;
+  height: 82%;
+}
+
+.img-experience {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.375rem;
+  max-width: 100%;
+  height: 40%;
 }
 
 .figure {
@@ -1302,7 +1320,7 @@ progress {
   }
   .col-lg-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+
   }
   .col-lg-9 {
     flex: 0 0 auto;
@@ -2851,19 +2869,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #f4623a;
-  --bs-btn-border-color: #f4623a;
+  --bs-btn-bg: #00901a;
+  --bs-btn-border-color: #00901a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #cf5331;
-  --bs-btn-hover-border-color: #c34e2e;
+  --bs-btn-hover-bg: #007c17;
+  --bs-btn-hover-border-color: #007c17;
   --bs-btn-focus-shadow-rgb: 246, 122, 88;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #c34e2e;
-  --bs-btn-active-border-color: #b74a2c;
+  --bs-btn-active-bg: #005a11;
+  --bs-btn-active-border-color: #005a11;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #f4623a;
-  --bs-btn-disabled-border-color: #f4623a;
+  --bs-btn-disabled-bg: #6fb97d;
+  --bs-btn-disabled-border-color: #6fb97d;
 }
 
 .btn-secondary {
@@ -4132,7 +4150,7 @@ textarea.form-control-lg {
   border: 0 !important;
   transform: none !important;
   transition: none;
-}
+}#min
 .navbar-expand .offcanvas .offcanvas-header {
   display: none;
 }
@@ -4144,7 +4162,7 @@ textarea.form-control-lg {
 }
 
 .navbar-dark {
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  --bs-navbar-color: #d3d2cf;
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
@@ -7912,6 +7930,11 @@ textarea.form-control-lg {
   gap: 3rem !important;
 }
 
+.wdt-30{
+  width: 100px;
+}
+
+
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
 }
@@ -8132,7 +8155,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #172642 !important;
 }
 
 .bg-secondary {
@@ -8147,7 +8170,7 @@ textarea.form-control-lg {
 
 .bg-info {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #43737B !important;
 }
 
 .bg-warning {
@@ -8173,6 +8196,12 @@ textarea.form-control-lg {
 .bg-darkOrange {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-darkOrange-rgb), var(--bs-bg-opacity)) !important;
+}
+
+
+.bg-blueGreen {
+  --bs-bg-opacity: 1;
+  background-color: #048b41 !important;
 }
 
 .bg-black {
@@ -10876,8 +10905,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
-  transition: background-color 0.2s ease;
+  background-color: #d4dad5;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10920,7 +10948,7 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-color: #d4dad5;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
@@ -11002,4 +11030,8 @@ header.masthead h1, header.masthead .h1 {
 }
 #projects .container-fluid .portfolio-box:hover .portfolio-box-caption, #projects .container-sm .portfolio-box:hover .portfolio-box-caption, #projects .container-md .portfolio-box:hover .portfolio-box-caption, #projects .container-lg .portfolio-box:hover .portfolio-box-caption, #projects .container-xl .portfolio-box:hover .portfolio-box-caption, #projects .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.horizontal-flex {
+  display: flex;
 }
