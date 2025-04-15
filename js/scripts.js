@@ -59,18 +59,44 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 let lastScrollTop = 0;
-const navbar = document.getElementById("mainNav");
+    const navbar = document.getElementById("mainNav");
+    const collapseMenu = document.getElementById("navbarResponsive");
 
-window.addEventListener("scroll", function () {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScroll > lastScrollTop) {
-        // Scrolling down
-        navbar.classList.add("navbar-hide");
-    } else {
-        // Scrolling up
-        navbar.classList.remove("navbar-hide");
+    function isMenuOpen() {
+        return collapseMenu.classList.contains("show");
     }
 
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative values
-});
+    function handleScroll() {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (!isMenuOpen()) {
+            if (currentScroll > lastScrollTop) {
+                navbar.classList.add("navbar-hide");
+            } else {
+                navbar.classList.remove("navbar-hide");
+            }
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }
+
+    // Regular scroll event
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Fallback for mobile touch scroll
+    let touchStartY = 0;
+    window.addEventListener("touchstart", (e) => {
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    window.addEventListener("touchmove", (e) => {
+        const currentY = e.touches[0].clientY;
+        if (!isMenuOpen()) {
+            if (currentY < touchStartY) {
+                navbar.classList.add("navbar-hide"); // scroll down
+            } else {
+                navbar.classList.remove("navbar-hide"); // scroll up
+            }
+        }
+        touchStartY = currentY;
+    }, { passive: true });
