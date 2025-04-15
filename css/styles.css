@@ -10941,6 +10941,8 @@ hr.divider-light {
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #d4dad5;
+  transition: transform 0.3s ease-in-out;
+  height: auto;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10960,10 +10962,15 @@ hr.divider-light {
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #559861 !important;
 }
+#mainNav.navbar-hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
     background-color: transparent;
+    transition: transform 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
