@@ -55,6 +55,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
+  --bs-purple-rgb: 128, 0, 128;
   --bs-font-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -652,7 +653,7 @@ progress {
   background-color: #fff;
   border: 1px solid var(--bs-border-color);
   border-radius: 0.375rem;
-  max-height: 12vh;
+  max-height: 70vh;
 }
 
 @media (max-width: 413px){
@@ -661,7 +662,7 @@ progress {
     background-color: #fff;
     border: 1px solid var(--bs-border-color);
     border-radius: 0.375rem;
-    max-height: 7vh;
+    max-height: 45vh;
   }
 }
 
@@ -8152,6 +8153,11 @@ textarea.form-control-lg {
   color: #6c757d !important;
 }
 
+.text-purple {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-purple-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black-50 {
   --bs-text-opacity: 1;
   color: rgba(0, 0, 0, 0.5) !important;
@@ -10929,7 +10935,7 @@ body {
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
-  margin: 1.5rem auto;
+  margin: 0rem auto 1.5rem  auto;
   background-color: #559861;
   opacity: 1;
 }
@@ -11091,13 +11097,47 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .block-flex-txt{
-  margin-left: 4rem !important;
+  background-color: #80808050;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-right: 1.5rem;
 }
 
 @media (max-width: 1199px){
   .block-flex-txt{
     margin-top: 3rem !important;
     margin-left: 0 !important;
+    margin-right: 0rem;
+  }
+}
+.block-flex-txt-dark{
+  background-color: #A9A9A950;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 1199px){
+  .block-flex-txt-dark{
+    margin-top: 3rem !important;
+    margin-left: 0 !important;
+    margin-right: 0rem;
+  }
+}
+
+.block-flex-txt-darker{
+  background-color: #50655B50;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 1199px){
+  .block-flex-txt-darker{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    margin-left: 0 !important;
+    margin-right: 0rem;
   }
 }
 
@@ -11108,5 +11148,19 @@ header.masthead h1, header.masthead .h1 {
 @media (max-width: 413px){
   .github-btn{
     margin-bottom: 1rem !important;
+  }
+}
+
+.skill-card{
+  background-color: #A9A9A950;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 23%;
+  margin: 0px 10px 0px 10px;
+}
+@media (max-width: 1199px){
+  .skill-card{
+    width: 42%;
+    margin: 1rem 10px 1rem 10px;
   }
 }
