@@ -31,8 +31,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projectnav">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -51,20 +51,37 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">My Portfolio website to showcase projects, experience, and more about myself!</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Find Out Who I am!</a>
+                        <a class="btn btn-primary btn-xl" href="#panel">Find Out Who I am!</a>
                     </div>
                 </div>
             </div>
         </header>
 
+        <section class="page-section bg-white-page">
+            <div class="container px-4 px-lg-5 mb-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center" id="panel">
+                        <h2 class="mt-0">Navigation Panel<br><h4>Use these buttons or scroll up to access the navbar</h4></h2>
+                        <hr class="divider divider" />
+                        <div class="nav-button-panel">
+                            <a class="btn btn-dark btn-xl" href="#about">Myself</a>
+                            <a class="btn btn-dark btn-xl" href="#experience">My Experience</a>
+                            <a class="btn btn-dark btn-xl" href="#education">My Education</a>
+                            <a class="btn btn-dark btn-xl" href="#projectnav">My Projects</a>
+                            <a class="btn btn-dark btn-xl" href="#contact">My Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- About-->
         <section class="page-section bg-primary">
             <div class="container px-4 px-lg-5 mb-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <div class="block-flex-img mb-5 horizontal-flex" id="about">
-                            <div class="block-flex-txt-darker my-auto">
+                        <div class="block-flex-img mb-5 horizontal-flex">
+                            <div class="block-flex-txt-darker my-auto" id="about">
                                 <h2 class="text-white mt-0">About me</h2>
                                 <hr class="divider divider-light" />
                                 <p class="text-white-75">I am a 22 year old student pursuing a degree in Computer Science at Conestoga College. I 
@@ -91,65 +108,11 @@
         </section>
 
 
-        <!-- Education-->
-        <section class="page-section bg-info">
-            <div class="container px-4 px-lg-5">
-                <div class=" gx-4 gx-lg-5 justify-content-center" id="education">
-                    <div class="block-flex-img col-lg-8 text-center">
-                        <div class="block-flex-txt-dark">
-                            <h2 class="text-white mt-0 text-center">College</h2>
-                            <hr class="divider divider-light" />
-                            <p class="text-white-75 gap-0">I am currently in my fourth and final year of the Computer Science program at Conestoga College's Waterloo campus 
-                                                        and I love it! The first year 
-                                                        really gave me a really good taste into what Conestoga is like, but most importantly what 
-                                                        Computer Science is all about. This program has been teaching me a lot about the general 
-                                                        Computer Science world, and giving little snippits of what it's like to work in the different 
-                                                        areas. The courses I took recently included:</p>
-
-                            <p class="text-warning mb-4">Software Safety & Reliability | AI & Machine Learning
-                                                        | Data Visualization | Capstone Project | Applied Data Analytics
-                                                        | Advanced Topics in AI and Machine Learning | Data Mining | French Language and Culture </p>
-
-                            <p class="text-white-75 gap-0">I've grown so much in my programming skills and team development knowledge and
-                                                        it's great to see that I am taking a step closer to the Computer Science world. 
-                                                        I hope to be on a developement team or designing team in the future!</p>
-                            <a class="btn btn-dark btn-xl" href="https://www.conestogac.on.ca/">Learn about Conestoga College</a>
-                        </div>
-                        <hr/>
-                        <img class="img-horizontal-conestoga ml-2" src="assets/img/portfolio/fullsize/ConestogaC.png"/>
-                    </div>
-                    <div class="block-flex-img col-lg-8 text-center">
-                        
-                        <img class="img-horizontal" src="assets/img/portfolio/fullsize/PrestonHS.png" alt="..." />
-                        <hr/>
-                        <div class="block-flex-txt-dark ms-4">
-                            <h2 class="text-white mt-0 text-center">Highschool</h2>
-                            <hr class="divider divider-light" />
-                            <p class="text-white-75 gap-0">Going back to my years in Highschool, I was still wondering which career I wanted to pick, and while 
-                                                        I always had Computer Science in mind, I was also considering alternate careers such as becoming a professional 
-                                                        athlete, a carpenter/woodworker, or a computer engineer. Preston High School was able to offer 
-                                                        many university and college level courses that allowed me to pick and choose the courses that 
-                                                        were best for my career of choice. Some of those college/university courses included:</p>
-
-                            <p class="text-warning mb-4">Calculus | Advanced Functions | Chemistry | Physics | Computer Science | Computer engineering</p>
-
-                            <p class="text-white-75 mb-4">This is a big reason why my passion for Computer Science continued to grow. I was able to learn 
-                                                        about coding, how to apply those concepts, and put it into practice. Preston High School was a 
-                                                        great place for my passion in Computer Science!</p>
-
-                            <a class="btn btn-dark btn-xl" href="https://phs.wrdsb.ca/">Learn about Preston High School</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
         <!-- Experience-->
         <section class="page-section bg-blueGreen">
-            <div class="container px-4 px-lg-5 text-center my-5" id="experience">
+            <div class="container px-4 px-lg-5 text-center">
                 <h2 class="text-white">My Skills</h2>
-                <hr class= "divider divider-light"/>
+                <hr class= "divider divider-light" id="experience"/>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-3 col-md-6 text-center skill-card">
                         <div>
@@ -189,7 +152,7 @@
                 <div class="container px-4 px-lg-5">
                     <div class=" gx-4 gx-lg-5">
                         <h2 class="text-white mt-0 text-center">Job Experience</h2>
-                        <hr class= "divider divider-light mb-5"/>
+                        <hr class= "divider divider-light mb-3"/>
                         <div class="col-lg-8 text-center block-flex-img mt-4">
                             <img class="img-experience-Coop my-auto" style="" src="assets/img/portfolio/fullsize/bp_logo.png"/>
                             <div class="block-flex-txt-darker ms-4">
@@ -212,7 +175,7 @@
                                 <a class="btn btn-dark btn-xl" href="https://www.busplanner.com/index.aspx">Learn More About BusPlanner</a>
                             </div>
                         </div>
-                        <div class="col-lg-8 text-center block-flex-img">
+                        <div class="col-lg-8 text-center block-flex-img mt-4">
                             <img class="img-experience my-auto" src="assets/img/portfolio/fullsize/Church.jpg"/>
                             <div class="block-flex-txt-darker ms-4">
                                 <h2 class="text-white">Videographer<br>(Volunteer work)</h2>
@@ -232,11 +195,65 @@
         </section>
 
 
+        <!-- Education-->
+        <section class="page-section bg-info">
+            <div class="container px-4 px-lg-5">
+                <div class=" gx-4 gx-lg-5 justify-content-center">
+                    <div class="block-flex-img col-lg-8 text-center">
+                        <div class="block-flex-txt-dark">
+                            <h2 class="text-white mt-0 text-center" id="education">College</h2>
+                            <hr class="divider divider-light" />
+                            <p class="text-white-75 gap-0">I am currently in my fourth and final year of the Computer Science program at Conestoga College's Waterloo campus 
+                                                        and I love it! The first year 
+                                                        really gave me a really good taste into what Conestoga is like, but most importantly what 
+                                                        Computer Science is all about. This program has been teaching me a lot about the general 
+                                                        Computer Science world, and giving little snippits of what it's like to work in the different 
+                                                        areas. The courses I took recently included:</p>
+
+                            <p class="text-warning mb-4">Software Safety & Reliability | AI & Machine Learning
+                                                        | Data Visualization | Capstone Project | Applied Data Analytics
+                                                        | Advanced Topics in AI and Machine Learning | Data Mining | French Language and Culture </p>
+
+                            <p class="text-white-75 gap-0">I've grown so much in my programming skills and team development knowledge and
+                                                        it's great to see that I am taking a step closer to the Computer Science world. 
+                                                        I hope to be on a developement team or designing team in the future!</p>
+                            <a class="btn btn-dark btn-xl" href="https://www.conestogac.on.ca/">Learn about Conestoga College</a>
+                        </div>
+                        <hr/>
+                        <img class="img-horizontal-conestoga ml-2" src="assets/img/portfolio/fullsize/ConestogaC.png"/>
+                    </div>
+                    <div class="block-flex-img col-lg-8 text-center mt-4">
+                        
+                        <img class="img-horizontal" src="assets/img/portfolio/fullsize/PrestonHS.png" alt="..." />
+                        <hr/>
+                        <div class="block-flex-txt-dark ms-4">
+                            <h2 class="text-white mt-0 text-center">Highschool</h2>
+                            <hr class="divider divider-light" />
+                            <p class="text-white-75 gap-0">Going back to my years in Highschool, I was still wondering which career I wanted to pick, and while 
+                                                        I always had Computer Science in mind, I was also considering alternate careers such as becoming a professional 
+                                                        athlete, a carpenter/woodworker, or a computer engineer. Preston High School was able to offer 
+                                                        many university and college level courses that allowed me to pick and choose the courses that 
+                                                        were best for my career of choice. Some of those college/university courses included:</p>
+
+                            <p class="text-warning mb-4">Calculus | Advanced Functions | Chemistry | Physics | Computer Science | Computer engineering</p>
+
+                            <p class="text-white-75 mb-4">This is a big reason why my passion for Computer Science continued to grow. I was able to learn 
+                                                        about coding, how to apply those concepts, and put it into practice. Preston High School was a 
+                                                        great place for my passion in Computer Science!</p>
+
+                            <a class="btn btn-dark btn-xl" href="https://phs.wrdsb.ca/">Learn about Preston High School</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Projects-->
         <div class= "page-section bg-dark" id="projects">
-            <div class="container-fluid p-0 mt-5" id="projectnav">
+            <div class="container-fluid p-0">
                 <h2 class="text-white my-0 text-center">Projects</h2>
-                <hr class= "divider divider-light mb-5 mt-1"/>
+                <hr class= "divider divider-light mb-5 mt-1" id="projectnav"/>
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="https://github.com/CovOwe04/WAR-card-game" title="War Card Game">
